@@ -33,7 +33,7 @@ jobs:
         CLOUDSDK_PYTHON: /usr/bin/python3
       run: |
         gcloud components update
-        gcloud container clusters get-credentials gke-project-426822-gke --region us-east5 --project gke-project-426822
+        gcloud container clusters get-credentials gke-project-426921-gke --region us-east5 --project gke-project-426921
         helm repo add sonarqube https://SonarSource.github.io/helm-chart-sonarqube
         helm template sonarqube sonarqube/sonarqube > ./sonarqube.yaml  -n sonarqube
         ls
